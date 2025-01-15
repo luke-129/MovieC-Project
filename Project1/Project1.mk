@@ -7,8 +7,8 @@ ProjectName            :=Project1
 ConfigurationName      :=Debug
 WorkspaceConfiguration :=Debug
 WorkspacePath          :=C:/Users/chasi/Documents/Udemy
-ProjectPath            :=C:/Users/chasi/Documents/Udemy/Project1
-IntermediateDirectory  :=../build-$(WorkspaceConfiguration)/Project1
+ProjectPath            :=C:/Users/chasi/source/repos/MovieC-Project/Project1
+IntermediateDirectory  :=../../../../Documents/Udemy/build-$(WorkspaceConfiguration)/__/__/source/repos/MovieC-Project/Project1
 OutDir                 :=$(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
@@ -30,7 +30,7 @@ LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
 OutputDirectory        :=C:/Users/chasi/Documents/Udemy/build-$(WorkspaceConfiguration)/bin
-OutputFile             :=..\build-$(WorkspaceConfiguration)\bin\$(ProjectName).exe
+OutputFile             :=..\..\..\..\Documents\Udemy\build-$(WorkspaceConfiguration)\bin\$(ProjectName).exe
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
@@ -96,17 +96,17 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/Movie.cpp$(ObjectSuffix): Movie.cpp 
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/chasi/Documents/Udemy/Project1/Movie.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Movie.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/chasi/source/repos/MovieC-Project/Project1/Movie.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Movie.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Movie.cpp$(PreprocessSuffix): Movie.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Movie.cpp$(PreprocessSuffix) Movie.cpp
 
 $(IntermediateDirectory)/Movies.cpp$(ObjectSuffix): Movies.cpp 
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/chasi/Documents/Udemy/Project1/Movies.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Movies.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/chasi/source/repos/MovieC-Project/Project1/Movies.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Movies.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Movies.cpp$(PreprocessSuffix): Movies.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Movies.cpp$(PreprocessSuffix) Movies.cpp
 
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp 
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/chasi/Documents/Udemy/Project1/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/chasi/source/repos/MovieC-Project/Project1/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
