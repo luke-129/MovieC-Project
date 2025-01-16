@@ -18,6 +18,8 @@ int main()
 		
 		collection.Display_Movies();
 		
+		Movie notWatched("not watched", "PG");
+		notWatched.watch_movie(collection);
 		
 		
 		
