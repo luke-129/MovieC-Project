@@ -1,6 +1,7 @@
 #ifndef MOVIE_H
 #define MOVIE_H
 #include <string>
+class Movies;
 class Movie
 {
 	
@@ -17,6 +18,7 @@ public:
 	std::string get_rating();
 	int get_watch_count();
 	
+	void watch_movie(Movies movies_obj);
 
 };
 

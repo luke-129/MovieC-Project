@@ -13,9 +13,11 @@ int main()
 		collection.Add_Movie(kill);
 		Movie bill("Bill", "R");
 		collection.Add_Movie(bill);
-		
+		Movie aa("Bill", "R");
+		collection.Add_Movie(aa);
 		
 		collection.Display_Movies();
+		
 		
 		
 		

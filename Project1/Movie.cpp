@@ -1,5 +1,5 @@
 #include "Movie.h"
-
+#include "Movies.h"
 Movie::Movie(std::string m_title, std::string m_rating)
 {
 	title = m_title;
@@ -18,3 +18,8 @@ std::string Movie::get_title() {return title;}
 int Movie::get_watch_count() {return watch_count;}
 
 
+void Movie::watch_movie(Movies movies_obj)
+{
+	
+	watch_count++;
+}
